@@ -219,7 +219,8 @@ local default_plugins = {
   -- file managing , picker etc
   {
     "nvim-tree/nvim-tree.lua",
-    cmd = { "NvimTreeToggle", "NvimTreeFocus" },
+    lazy=false,
+    cmd = { "NvimTreeToggle", "NvimTreeOpen", "NvimTreeFocus", "NvimTreeFindFileToggle" },
     init = function()
       require("core.utils").load_mappings "nvimtree"
     end,
