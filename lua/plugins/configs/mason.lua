@@ -1,5 +1,14 @@
+local servers = {
+    "lua-language-server",
+    "html-lsp",
+    "prettier",
+    "stylua"
+}
+
 local options = {
-  ensure_installed = { "lua-language-server" }, -- not an option from mason.nvim
+  ensure_installed = servers, -- not an option from mason.nvim
+
+  automatic_installation = true,
 
   PATH = "skip",
 
